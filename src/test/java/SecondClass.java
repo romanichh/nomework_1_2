@@ -29,6 +29,21 @@ public class SecondClass {
     driver.findElement(By.name("wpPassword")).sendKeys("romaroma87");
     driver.findElement(By.id("wpLoginAttempt")).click();
     Thread.sleep(5000);
+    driver.findElement(By.linkText("Log out")).click();
+    Thread.sleep(5000);
+    driver.findElement(By.linkText("Log in")).click();
+    Thread.sleep(2000);
+    driver.findElement(By.id("wpName1")).click();
+    driver.findElement(By.id("wpName1")).clear();
+    driver.findElement(By.id("wpName1")).sendKeys("Romanich87");
+    driver.findElement(By.name("wpPassword")).click();
+    driver.findElement(By.name("wpPassword")).clear();
+    driver.findElement(By.name("wpPassword")).sendKeys("romaroma87");
+    driver.findElement(By.id("wpLoginAttempt")).click();
+    Thread.sleep(5000);
+
+
+
 
     }
 
